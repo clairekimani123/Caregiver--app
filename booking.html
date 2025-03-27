@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAREGIVER PLATFORM</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>CareLink</h1>
+        <nav id="nav-bar">
+            <a href="index.html">HOME</a>
+            <a href="caregiver.html">CAREGIVER</a>
+            <a href="booking.html" >BOOKING</a>
+            <a href="review.html" >REVIEW</a>
+            
+        </nav>
+    </header>
+    <nav>
+        <a href="index.html">homepage</a>
+    </nav>
+    <main class="MAIN">
+        <h2>Book a Caregiver</h2>
+        <form action="action.jpg" id="bookingForm">
+            <label for="caregiver"> Select Caregiver</label>
+            <select name="caregiver" id="caregiver" required>
+                <!--caregiver options will be populated here  -->
+            </select>
+            <br><br>
+            <label for="appointmentDate">Select Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate"required>
+            <br><br>
+
+            <label for="appointmentTime">Select Time</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+            <br><br>
+
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" name="userName" required>
+            <br><br>
+
+            <label for="userContact">Your Contact Information:</label>
+            <input type="text" id="userContact" name="userContact" required>
+            <br><br>
+
+            <button type="submit">Book Appointment</button>
+
+        </form>
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
