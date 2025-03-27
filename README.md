@@ -3,18 +3,17 @@ By creating a Caregiver platform  I can help connect families with verified prof
 
 #Features
 **HOME PAGE**
-Contains the general information of my app 
-
-**ABOUT PAGE**
+Contains the general information of my app. 
 Provide the background information of the  importance of having the app.
 
-**PROFILE PAGE**
+**CAREGIVER PAGE**
 Here is where we get the caregivers  profile  and their information and their expertise and certifications.
 
-**SERVICE PAGE**
+**BOOKING PAGE**
 Contains the services details, booking sessions, and payment schedulles
 
-**CONTACT PAGE**
+**REVIEW PAGE**
+This where patients can write their views.
 Has ways of contacting us i.e emails and social media links
 
 #Technologies
