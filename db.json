@@ -1,0 +1,61 @@
+[
+    {
+        "id": 1,
+        "name": "Lauryn Wairimu",
+        "experience": "5 years of experience in elderly care.",
+        "certification": "Certified Nursing Assistant",
+        "image": "images2/ass1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Rsper Wangui",
+        "experience": "3 years of experience in pediatric care.",
+        "certification": "Pediatric Care Specialist",
+        "image": "images2/ass2.jpg"
+    },
+    
+    {
+        "id": 3,
+        "name": "Slyivia Wangui",
+        "experience": "34years of experience in orthopeditric.",
+        "certification": " Orthopeditric Specialist",
+        "image": "images2/ass3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Mareen Kamunge",
+        "experience": "6 years of experience in Eledery  Care.",
+        "certification": "Certified Nursing Assistant",
+        "image": "images2/ass4.jpg"
+    },
+    
+    {
+        "id": 5,
+        "name": "Rsper Wambui",
+        "experience": "3 years of experience in Eledery  Care.",
+        "certification": "Certified Nursing Assistant",
+        "image": "images2/ass5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Irene Kiprono",
+        "experience": "6 years of experience in Eledery  Care.",
+        "certification": "Certified Nursing Assistant",
+        "image": "images2/ass6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Elizabeth Wairimu",
+        "experience": "3 years of experience in Eledery  Care.",
+        "certification": "Certified Nursing Assistantt",
+        "image": "images2/ass7.jpg"
+    },
+   
+    {
+        "id": 8,
+        "name": "Consalata Waithera",
+        "experience": "3 years of experience in Eledery  Care.",
+        "certification": "Certified Nursing Assistant",
+        "image": "images2/ass8.jpg"
+    }
+]
