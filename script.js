@@ -1,4 +1,4 @@
-addEventListener('DOMContentLoaded', () =>{
+document.addEventListener('DOMContentLoaded', () =>{
     if (document.getElementById('caregiver')) {
         loadCaregivers();
     }
@@ -25,17 +25,17 @@ async function loadCaregivers() {
         console.log(caregivers);
         const caregiverSelect = document.getElementById('caregiver');
         if (caregiverSelect){
-            caregivers.forEach(caregiver => {
-                const option = document.createElement('option');
-                option.value = caregiver.id;
-                option.textContent = caregiver.name;
-                caregiverSelect.appendChild(option);
-    
-            });
+            
 
         }
 
-        
+        caregivers.forEach(caregiver => {
+            const option = document.createElement('option');
+            option.value = caregiver.id;
+            option.textContent = caregiver.name;
+            caregiverSelect.appendChild(option);
+
+        });
     }catch (error) {
         console.log('Error fetching caregiver data', error);
     }
@@ -60,7 +60,7 @@ async function loadCaregiverProfiles() {
             caregiverList.appendChild(div);
         });
     } catch (error) {
-        console.log('Error fetching caregiver profiles', error);
+    
     }
 }
 

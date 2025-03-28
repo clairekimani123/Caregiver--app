@@ -101,7 +101,7 @@ button:hover{
 }
 @media(max-width: 600px){
   #nav-bar {
-    flex-deriction: column;
+    flex-direction: column;
     align-items: center;
 
   }
@@ -111,5 +111,12 @@ button:hover{
     width:100%;
     text-align:center;
   }
+}
+#homepage{
+  background-image: url(images/X-rry.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size:cover ;
+  background-position: center;
 }
 
