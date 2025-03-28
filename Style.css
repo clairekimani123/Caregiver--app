@@ -119,4 +119,13 @@ button:hover{
   background-size:cover ;
   background-position: center;
 }
-
+#img{
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+#img2{
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
