@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 //function to load caregiver 
 async function loadCaregivers() {
     try {
-        const response = await fetch('http://localhost:3000/caregivers');
+        const response = await fetch('http://localhost:3000/1');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -29,13 +29,14 @@ async function loadCaregivers() {
 
         }
 
-        caregivers.forEach(caregiver => {
+        for(x in caregivers)  {
+            const caregiver = caregivers[x]
             const option = document.createElement('option');
             option.value = caregiver.id;
-            option.textContent = caregiver.name;
+            option.textContent = x;
             caregiverSelect.appendChild(option);
 
-        });
+        };
     }catch (error) {
         console.log('Error fetching caregiver data', error);
     }
@@ -43,23 +44,26 @@ async function loadCaregivers() {
 //function to load caregiver profile
 async function loadCaregiverProfiles() {
     try {
-        const response = await fetch('http://localhost:3000/caregivers');
+        const response = await fetch('http://localhost:3000/1');
         const caregivers = await response.json();
         const caregiverList = document.getElementById('caregiverlist');
 
-        caregivers.forEach(caregiver => {
+        for (y in caregivers){
+            const x = caregivers[y]
             const div = document.createElement('div');
             div.classList.add('caregiver-profile');
 
             const img = document.createElement('img');
-            img.src = caregiver.image;
-            img.alt = caregiver.name;
+            img.src = x.image;
+            img.alt = x.name;
             img.style.cursor = 'pointer';
 
             div.appendChild(img);
             caregiverList.appendChild(div);
-        });
+            console.log(x);
+        };
     } catch (error) {
+        console.log(error);
     
     }
 }
@@ -107,6 +111,6 @@ async function loadReviews() {
 
         });
     }catch (error) {
-        console.log('Error fetching reviews', error);
+        console.log('Error fetching reviews:', error);
     }
 }
