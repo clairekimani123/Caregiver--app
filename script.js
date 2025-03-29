@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         loadCaregiverProfiles();
     }
     if (document.getElementById('review-list')) {
-        loadReviews(t);
+        loadReviews();
         
 
     }
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 //function to load caregiver 
 async function loadCaregivers() {
     try {
-        const response = await fetch('http://localhost:3000/1');
+        const response = await fetch('http://localhost:3000/caregivers');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -45,7 +45,7 @@ async function loadCaregivers() {
 //function to load caregiver profile
 async function loadCaregiverProfiles() {
     try {
-        const response = await fetch('http://localhost:3000/1');
+        const response = await fetch('http://localhost:3000/caregivers');
         const caregivers = await response.json();
         const caregiverList = document.getElementById('caregiverlist');
 
@@ -99,15 +99,15 @@ function handleBookingForm(event) {
 
 }
 //function to load reviews
-async function loadReviews(t) {
+async function loadReviews() {
     try {
         const response = await fetch('http://localhost:3000/reviews');
-        const reviews = await response.json(reviews);
+        const reviews = await response.json();
         const reviewList = document.getElementById('review-list');
 
         for(z in reviews) {
-          let t = reviews;
-          const z = reviews[t];
+         
+          const t = reviews[z];
             const div = document.createElement('div');
             div.innerHTML = `<h4>${t.user}</h4><p>${t.comment}</p>`;
             reviewList.appendChild(div);
