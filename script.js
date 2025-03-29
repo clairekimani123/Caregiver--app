@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () =>{
         loadCaregiverProfiles();
     }
     if (document.getElementById('review-list')) {
-        loadReviews();
+        loadReviews(t);
+        
 
     }
     const bookingForm = document.getElementById('booking-form');
@@ -98,18 +99,21 @@ function handleBookingForm(event) {
 
 }
 //function to load reviews
-async function loadReviews() {
+async function loadReviews(t) {
     try {
         const response = await fetch('http://localhost:3000/reviews');
-        const reviews = await response.json();
+        const reviews = await response.json(reviews);
         const reviewList = document.getElementById('review-list');
 
-        reviews.forEach(review => {
+        for(z in reviews) {
+          let t = reviews;
+          const z = reviews[t];
             const div = document.createElement('div');
-            div.innerHTML = `<h4>${review.user}</h4><p>${review.comment}</p>`;
+            div.innerHTML = `<h4>${t.user}</h4><p>${t.comment}</p>`;
             reviewList.appendChild(div);
+            console.log(t);
 
-        });
+        };
     }catch (error) {
         console.log('Error fetching reviews:', error);
     }
