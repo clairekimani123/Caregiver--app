@@ -106,7 +106,6 @@ async function loadReviews() {
         const reviewList = document.getElementById('review-list');
 
         for(z in reviews) {
-         
           const t = reviews[z];
             const div = document.createElement('div');
             div.innerHTML = `<h4>${t.user}</h4><p>${t.comment}</p>`;

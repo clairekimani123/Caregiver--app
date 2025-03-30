@@ -14,7 +14,7 @@ Contains the services details, booking sessions, and payment schedulles
 
 **REVIEW PAGE**
 This where patients can write their views.
-Has ways of contacting us i.e emails and social media links
+
 
 #Technologies
 HTML: for the structure and the layout of the  web page
