@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 //function to load caregiver 
 async function loadCaregivers() {
     try {
-        const response = await fetch('http://localhost:3000/caregivers');
+        const response = await fetch('https://live-json-server-sand.vercel.app/caregivers');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -45,7 +45,7 @@ async function loadCaregivers() {
 //function to load caregiver profile
 async function loadCaregiverProfiles() {
     try {
-        const response = await fetch('http://localhost:3000/caregivers');
+        const response = await fetch('https://live-json-server-sand.vercel.app/caregivers');
         const caregivers = await response.json();
         const caregiverList = document.getElementById('caregiverlist');
 
@@ -101,7 +101,7 @@ function handleBookingForm(event) {
 //function to load reviews
 async function loadReviews() {
     try {
-        const response = await fetch('http://localhost:3000/reviews');
+        const response = await fetch('https://live-json-server-sand.vercel.app/reviews');
         const reviews = await response.json();
         const reviewList = document.getElementById('review-list');
 
