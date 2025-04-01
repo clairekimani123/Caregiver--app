@@ -7,10 +7,10 @@ Contains the general information of my app.
 Provide the background information of the  importance of having the app.
 
 **CAREGIVER PAGE**
-Here is where we get the caregivers  profile  and their information and their expertise and certifications.
+Here is where we get the caregivers  profile.
 
 **BOOKING PAGE**
-Contains the services details, booking sessions, and payment schedulles.
+Contains the booking form. 
 
 **REVIEW PAGE**
 This where patients can write their views.
