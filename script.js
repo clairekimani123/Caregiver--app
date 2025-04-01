@@ -117,3 +117,30 @@ async function loadReviews() {
         console.log('Error fetching reviews:', error);
     }
 }
+//handle payment form submission
+document.getElementById('payment-form').addEventListener('submit', function(event){
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const cardNumber = document.getElementById('card-number').value;
+    
+    if(!name ||!eamil ||!cardNumber ) {
+        alert('please fill out all fields!');
+
+       
+    }
+    alert(`payment succesful for ${name} with email: ${email}`);
+});
+
+document.getElementById('schedule-form').addEventListener('submit', function(event){
+    event.preventDefault();
+    const caregiverName = document.getElementById('caregiver-name').value;
+    const scheduleDate = document.getElementById('schedule-date').value;
+    const scheduleTime = document.getElementById('schedule-time').value;
+
+    if(!caregiverName || !scheduleDate || !scheduleTime) {
+        alert('please select a caregiver and schedule a time!');
+        return;
+    }
+    alert(`caregiver ${caregiverName} is scheduled for ${scheduleDate} at ${scheduleTime}`);
+});
